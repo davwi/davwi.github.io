@@ -1,0 +1,75 @@
+
+digraph{
+    graph [ bgcolor="none",
+            resolution=72,
+            fontcolor=gray20,
+            fontsize=14,
+            layout=dot,
+            rankdir="LR",
+            splines=ortho,
+            compound=true,
+            fontname="Helvetica,Arial,sans-serif"];
+    node  [ fontname="Helvetica,Arial,sans-serif", 
+            //style=filled, 
+            color = gray20, 
+            fontcolor = gray20, 
+            shape = record, 
+            fillcolor="none"];
+    edge  [ fontname="Helvetica,Arial,sans-serif", 
+            style=dashed, 
+            color = gray20, 
+            arrowsize=0.75];
+    
+
+    subgraph cluster{
+        fillcolor="none";
+        color = gray20;
+        label=<<b> pandoc </b>>;
+        "posts";
+        "output";
+        ".tex";
+        ".md";
+        ".epub";
+        bib[shape=none, width=0, height=0, label="ref.bib"];
+        n1[shape=none, width=0, height=0, label=""];
+        {rank = same; "posts"; bib;};
+    }
+
+    subgraph cluster_t{
+        fillcolor="none";
+        color = gray20;
+        label=<<b> Templates </b>>;
+        PDF;
+        jekyll;
+        "epub.css";
+    }
+
+    n2[shape=none, width=2, height=0, label="Notes/Annotations"];
+
+    // edges
+    "Reference Management" -> bib[taillabel="(3)",labeldistance="1.65",labelangle="330", fontcolor = red];
+    "posts" -> "output"[taillabel="(5)",labeldistance="2", fontcolor = red];
+    "output" -> ".tex"[taillabel="(4)",labeldistance="6",labelangle="48", fontcolor = red];
+    "output" -> ".md"[taillabel="(2)",labeldistance="1.95", fontcolor = red];
+    "output" -> ".epub"[taillabel="(7)",labeldistance="5",labelangle="300", fontcolor = red];
+    ".tex" -> PDF[taillabel="(1)",labeldistance="2", fontcolor = red];
+    ".md" -> jekyll;
+    ".epub" -> "epub.css"[dir="back"];
+    bib -> posts;
+    n2 -> "posts"[taillabel="(6)",labeldistance="2.6",labelangle="340", fontcolor = red];
+
+
+    // (1): batch_cleanup.bat for aux files, main.txt as template for the generated main documents for combined and standalone variant; noto sans fonts install
+    // (2): render as markdown_strict
+    // (3): combined bibs to keep all bibs up to date
+    // (4): textemplate.latex to define metadata about the document from the yaml header
+    // (5): autoConvert.bat via autoConvert.ps1 and autoConvert.py
+    // (6): Style Guide
+
+    
+
+    // title
+    labelloc="t";
+    fontsize="20";
+    //label   =<<b> Information Input Graph </b>>;
+}

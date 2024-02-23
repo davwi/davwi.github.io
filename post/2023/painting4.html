@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- disallow indexing -->
+	<meta name="robots" content="noindex" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Painting 4 | davwi</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Painting 4" />
+<meta name="author" content="David Wittig" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Let’s canvass some more canvases. This post contains a continuation of colorimetry basics, introduced in the last post. The new painting is ekphrastically filigreed, and techniques for its production are explained." />
+<meta property="og:description" content="Let’s canvass some more canvases. This post contains a continuation of colorimetry basics, introduced in the last post. The new painting is ekphrastically filigreed, and techniques for its production are explained." />
+<link rel="canonical" href="http://localhost:4000/post/2023/painting4.html" />
+<meta property="og:url" content="http://localhost:4000/post/2023/painting4.html" />
+<meta property="og:site_name" content="davwi" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-06-08T00:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Painting 4" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"David Wittig"},"dateModified":"2023-06-08T00:00:00+02:00","datePublished":"2023-06-08T00:00:00+02:00","description":"Let’s canvass some more canvases. This post contains a continuation of colorimetry basics, introduced in the last post. The new painting is ekphrastically filigreed, and techniques for its production are explained.","headline":"Painting 4","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/post/2023/painting4.html"},"url":"http://localhost:4000/post/2023/painting4.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="davwi" />
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+<!-- math jax https://11011110.github.io/blog/2019/10/17/mathjax-3-jekyll.html 
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function(){
+        function stripcdata(x) {
+          if (x.startsWith('% <![CDATA[') && x.endsWith('%]]>'))
+            return x.substring(11,x.length-4);
+          return x;
+        }
+        document.querySelectorAll("script[type='math/tex']").forEach(function(el){
+          el.outerHTML = "\\(" + stripcdata(el.textContent) + "\\)";
+        });
+        document.querySelectorAll("script[type='math/tex; mode=display']").forEach(function(el){
+          el.outerHTML = "\\[" + stripcdata(el.textContent) + "\\]";
+        });
+        var script = document.createElement('script');
+        script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
+        document.head.appendChild(script);
+      }, false);
+      </script>
+
+
+-->
+<!-- https://benlansdell.github.io/computing/mathjax/ -->
+
+<script type="text/x-mathjax-config">
+    MathJax = {
+      tex: {
+        equationNumbers: {autoNumber: "AMS"}
+        inlineMath: [['$', '$'], ["\\(", "\\)"]],
+        displayMath: [ ['$$', '$$'] ],
+        processEscapes: true,
+        loader: {load: ['[tex]/color']},
+        tex: {packages: {'[+]': ['color']}}
+      }
+    };
+    MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
+          alert("Math Processing Error: "+message[1]);
+        });
+    MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
+          alert("Math Processing Error: "+message[1]);
+        });
+</script>
+    
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    
+<script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      displayMath: [ ['$$', '$$'], ["\\[", "\\]"]],
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+<!-- prevent equation overflow on mobile-->
+<!-- first for inline, second for display math-->
+<style>
+mjx-container:not([display]) {
+  display: inline-flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+mjx-container{
+  display: inline-flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+</style>
+
+
+</head><body><header class="site-header">
+
+    <div class="wrapper"><a class="site-title" rel="author" href="/">davwi</a><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+  
+          <div class="trigger"><a class="page-link" href="/posts/index.html">Posts</a><a class="page-link" href="/fillips/">Fillips</a><a class="page-link" href="/about/">About</a></div>
+        </nav></div>
+  </header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Painting 4</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2023-06-08T00:00:00+02:00" itemprop="datePublished">
+          2023–06–08</time><!--wordcount here-->
+        <span style="float:right;">
+          <font style="font-size: 14px;color: #c0c0c0">~1400 words</font>
+        </span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Let’s canvass some more canvases. This post contains a continuation of colorimetry basics, introduced in the last post. The new painting is ekphrastically filigreed, and techniques for its production are explained.</p>
+
+<h4 id="colorimetry">Colorimetry</h4>
+
+<p>While the introduction to colorimetry by example of an approximation method for spectral reflectance curve generation from sRGB values brought us closer to the goal of calculating mixing ratios of paints for a given color, even less than $0.1 \%$ of pigment weight variation within a mixture can have a visually substantial impact in my experience.
+In this application a high level of precision is required, one that the previously presented spectral matching method does not offer, especially once we consider that the result has to improve one’s ability beyond what can be achieved by traditional practice of mixing.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>If we partition the visible range, limited by the narrowest spectral bandwidth that presents a noticeable difference in hue, experiments show that the needed threshold can be as low as 1nm around 500nm and 600nm, meaning a radiation’s wavelength shift of 1nm would result in detectable chromatic differences.[1] Thus, for oil-colorant formulation we need to consider a method to subtractively mix optically thick turpid media with suspended non-luminous light scattering pigment particles; the current state of the art for this setting is the two-flux Saunderson-Kubelka-Munk Model.[2]</p>
+
+<p>The paint is based on a translucent medium, usually linseed oil or safflower oil, which is rendered optically thick by inhomogeneously dispended, colored pigment particles of a size about one order of magnitude larger than the visible wavelengths; consequently all incident light will be Mie-scattered over multiple wavelength-dependent diffusion and absorption events, and completely diffuse along the direction of the incident light ray so that only considering the ascending flux of reflection $\Phi_{\uparrow i, \lambda}(s)$ suffices.</p>
+
+<center>
+<figure>
+<img src="/assets/img/painting4-fluxes.png" alt="painting_4" style="width:650px" class="invert_8" />
+<figcaption><i><b>Fig. 1:</b> Fluxes</i></figcaption>
+</figure>
+</center>
+<p>The two-flux Kubelka-Munk mixing law describes the spectral reflectance $R_{i,\infty}(\lambda)$ at the surface $s=0$ as the ratio of fluxes, and by assigning each internal turpid layer-element $ds$ that the light moves through a probability of photon absorption $K(\lambda)$ and photon scattering $S(\lambda)$ that are characteristic of the wavelength and pigment mixture encountered<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>, as long as the ray does not reach the substrate, i.e. the canvas, as a function of those two coefficients for each pigment type.</p>
+
+\[R_i(\lambda) = \frac{\Phi_{\uparrow i, \lambda}(s=0)}{\Phi_{\downarrow i, \lambda}(s=0)}\]
+
+\[\frac{K(\lambda)}{S(\lambda)} = \frac{(1-R_{i,\infty}(\lambda))^2}{2 R_{i,\infty}(\lambda)}\]
+
+\[\frac{K_{mix}(\lambda)}{S_{mix}(\lambda)} = \frac{\sum_j c_j K_j(\lambda)}{\sum_j c_j S_j(\lambda)}\]
+
+<p>With addition of Saunderson’s Equation (including specular reflection component), $R_{i,\infty}(\lambda)$ equates to a function of reflectance measurements $R’(\lambda)$, while also considering light source specific Fresnel reflection at the air-paint border $\rho_0(\lambda) \approx \frac{(n(\lambda)-1)^2}{(n(\lambda)+1)^2}$ and internally $\rho_i(\lambda) \approx 0.68\cdot n -0.56$, where $n$ refers to the refractive index.</p>
+
+\[R_{i,\infty}(\lambda) = \frac{R'(\lambda)-\rho_0(\lambda)}{(1-\rho_0(\lambda))(1-\rho_i(\lambda))+\rho_i(\lambda)R'(\lambda)-\rho_0(\lambda)\rho_i(\lambda)}\]
+
+<p>Starting from reflectance measurements $R’(\lambda)$, we are able to calculate possible mixtures of pigments with hitherto unknown concentrations $c_j$, that can match a target spectral reflectance by characterizing each pigment’s $K_j(\lambda)$ and $S_j(\lambda)$ coefficients, leaving the mixing law equations to be solved for $c_j$ only.</p>
+
+<p>Characterization is initialized by finding the four unknown coefficients of two pigments, usually black and white, by assigning $S_W = 1$, and finding the rest via spectral reflectance measurements of three compositions; masstone white (W), masstone black (K), and a mixture (KW) where $c_K=3\%$ and $c_W=97\%$.</p>
+
+\[\begin{aligned}
+S_W =&amp; 1\\
+K_W =&amp; \frac{M_W}{S_W}\\
+K_K =&amp; - \frac{c_W(M_W - M_{KW})}{(1-c_W)(M_K-M_{KW})}M_K\\
+S_K =&amp; \frac{K_K}{M_K}
+\end{aligned}\]
+
+<p>For each additional pigment (C), two more measurements are required; either a mixture (CW) where $c_{CW}=5\%$ and $c_W=95\%$ for organic pigments, or a mixture (CW) where $c_{CW}=25\%$ and $c_W=75\%$ for inorganic pigments, and a second mixture (CK) where $c_{CK}=99\%$ and $c_K=1\%$.</p>
+
+\[\begin{aligned}
+S_C =&amp; \left\{ \frac{(1-c_{CK})[M_{CK}S_K-K_K]}{c_{CK}} - \frac{(1-c_{CW})[M_{CW}S_W-K_W]}{c_{CW}} \right\} \frac{1}{M_{CW}-M_{CK}}     \\
+K_C =&amp; \left\{ \frac{(1-c_{CK})[M_{CK}S_K-K_K]}{c_{CK}M_{CK}} - \frac{(1-c_{CW})[M_{CW}S_W-K_W]}{c_{CW}M_{CW}} \right\} \frac{1}{1/M_{CW}- 1/M_{CK}}    
+\end{aligned}\]
+
+\[M_{X} = \frac{(1-R_{i,\infty, X}(\lambda))^2}{2 R_{i,\infty, X}(\lambda)}\text{ where } X\in \{K, W, KW, CK, CW\}\]
+
+<p>By using the obtained absorption and scattering coefficients for reflectance matching, we find the best physically fitting combinations of pigments that can be further evaluated and optimized with colorimetric methods, like metameric matching and color difference specifications.</p>
+
+<p>If the below equation is satisfied, which is rarely the case, an exact solution was found. In other cases, the solution is evaluated by calculating the spectral reflectance from the results and comparison to the target by finding the root mean square (<span class="smallcaps">Rms</span>).[1]</p>
+
+\[\sum_{i=1}^{n\text{ pigments}} c_i \left[ K_i(\lambda_j)-S_i(\lambda_j)\frac{K_{mix}(\lambda_j)}{S_{mix}(\lambda_j)}\right]
+= \sum_{i=1}^{n\text{ pigments}} c_i Q_i(\lambda_j) = 0\]
+
+<p>Not only is finding an exact solution unlikely, we also still need the reference reflectance data, that for example belongs to an sRGB value, and the illuminant present, to optimize the found mixture of pigments.</p>
+
+<h4 id="techne">Techne</h4>
+
+<p>Goethe said “You can only see what you know.” [“Man sieht nur, was man weiß.”], thusly a painting’s perception can change with additional information and artwork is never completely seperable from its creator.
+A descriptive work of poetry that relates to an artwork through rhetorical devices will not be able to replace, but may be able to enhance the painting by adding information and context.
+The poem “Edward Hopper and the House by the Railroad (1925)” by Edward Hirsch [3] about the eponymous painting is a good example for this so called ekphrastic poetry, a common practice since the greek antiquity.
+Playing with language to draft poetry is enjoyable, finding the right words almost feels like solving cross-word puzzles, but it does require a lot of courage to share amateurish attempts, thus offering a slightly more prosaic examination of this post’s painting ex infra will have to suffice.</p>
+
+<p>In juxtaposition to Hirsch’s stanzas and Bildakt theory, by considering the interaction between beholder, painter and painted object/subject, this work too could be said to deal with the gaze, looking and being looked at.
+Under this premise, one can read into the painted figure, a sense of frustration for it is instrumentalized to serve, and be evaluated by, the gaze of both painter and beholder. At the same time, as a passive object, the painting has no agency.
+In an evenly lit white void as if placed in a display window, forced to be beheld by onlookers to be only one among thousands of impressions, to satisfy the compulsive act of sedating the mind with an all-too-fleeting distraction.
+Art-objects as pseudo-subjects are acted-upon, suffer from a strong power asymmetry defined by the artistic and aesthetic conventions of objectification, this applies to figurative painting depictions in particular.</p>
+
+<center>
+<figure>
+<img src="/assets/img/painting4-painting_blur.jpg" alt="painting_4" style="width:450px" />
+<figcaption><i><b>Fig. 1:</b> no title, 40&#10799;30cm, 2023 <a href="https://1drv.ms/i/s!ArG5UcK4UKhfgoQMu_hz1eCvwSxSyg">(unblur)</a></i></figcaption>
+</figure>
+</center>
+<p>Because the paintings have little impasto, they are suitable to be scanned by a regular document scanner. The harsh, direct lighting offered by these scanners is the biggest downside compared to a daylight photograph; this makes the scans unusable for display purposes, but allows for a very detailed mapping of the painting.
+There is no lens distortion, or changes in lighting condition, and a 1200dpi scan at $30\times40cm$ result in a resolution of 268 megapixels.
+Parameters derived from a scanned color checker card can be reused indefinitely, making scans comparable over time.</p>
+
+<p>On a side note, an oil painting is traditionally comprised of multiple layers of paint.
+The opacity of paints is too low, and even the lightest brush’s brushmarks too deep, to achieve the desired palette mixture’s masstone with just one coating of the ground, naturally I was looking for a good method to preserve the mixed colors, for reuse and unoxidized reference at a later stage. Oil paint aging happens because of oxidative polymerization, creating a molecule network, and oxidative degradation, which forms unlinked molecules. After this first stage, hydrolysis follows in both cases which can make the paint vulnerable to extraction of those smaller molecules by solvents, depending on the amount of degradation it experienced. [4] That is to say, there is no aging without oxidization, an environment which can be created in an airtight container with oxygen scavenger sachets, made of a mixture of iron powder and sodium chlorite.</p>
+
+<p>The plan is to store mixtures in tiny zip lock bags and store those in an air-tight container with an oxygen remover, in the expectation that the paints will remain unchanged. When I tried this preservation method over a period of about a month, there was some stiffening of the paint, but that should already be enough time for the underlying layer of paint to dry enough to paint another one. It is not perfect, but to quote Nam June Paik, „When too perfect lieber Gott Böse“.</p>
+
+<hr />
+
+<h4 id="endnotes">Endnotes</h4>
+
+<p><span class="csl-left-margin">[1] </span><span class="csl-right-inline">C. Oleari, <em>Standard Colorimetry: <span class="nocase">Definitions, Algorithms and Software</span></em>. 2015. </span></p>
+
+<p><span class="csl-left-margin">[2] </span><span class="csl-right-inline">P. Kubelka and F. Munk, “<span class="nocase">Ein Beitrag zur Optik der Farbanstriche</span>,” <em>Zeitschrift für technische Physik</em>, vol. 12, pp. 593–601, 1931. </span></p>
+
+<p><span class="csl-left-margin">[3] </span><span class="csl-right-inline">E. Hirsch, “<span class="nocase">Edward Hopper and the House by the Railroad (1925)</span>,” 1925. [Online]. Available: <a href="http://english.emory.edu/classes/paintings&amp;poems/house.html">http://english.emory.edu/classes/paintings&amp;poems/house.html</a></span></p>
+
+<p><span class="csl-left-margin">[4] </span><span class="csl-right-inline">K. J. van den Berg, A. Burnstock, M. de Keijzer, J. Krueger, T. Learner, and A. de Tagle, <em><span class="nocase">Issues in Contemporary Oil Paint</span></em>. 2014. </span></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I did implement a complete algorithm from rgb to mixing ratio, it is able to identify different primary colors, but that is about it. It was a lot of work but the results are just too vague, still glad I tried. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>For example, yellow pigment has strong tinting in low wavelengths under 530nm, thus mixing with black pigment lifts the mixed paint until about 520nm (green wavelength) and then flatens because black starts to dominate, resulting in a greenish color. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div><a class="u-url" href="/post/2023/painting4.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+    <data class="u-url" href="/"></data>
+  
+    <div class="wrapper">
+  
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <p class="feed-subscribe">
+            <a href="/feed.xml">
+              <svg class="svg-icon brand-color" style="box-sizing: content-box;"> <!-- image only looks right with content box-->
+                <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+              </svg>
+              <span>Atom feed</span>
+            </a>
+           <!-- <span>| </span><span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a></span>-->
+          </p>
+          <ul class="contact-list">
+            <!--<li><a class="u-email" href="mailto:spamprotection@wrong.email">spamprotection@wrong.email</a></li>-->
+          </ul>
+        </div>
+        <div class="footer-col footer-col-2">
+          <p><a href="/contact/
+
+">legal notice, privacy policy</a><br>© 2019-2024 David Wittig</p><!--<font style="font-variant: small-caps">(En/De)</font> Impressum, Datenschutz-->
+        </div>
+      </div>
+    </div>
+
+
+  </footer></body>
+
+</html>

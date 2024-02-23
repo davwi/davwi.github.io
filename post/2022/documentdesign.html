@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- disallow indexing -->
+	<meta name="robots" content="noindex" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Document Design | davwi</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Document Design" />
+<meta name="author" content="David Wittig" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="As the title suggests, the following is about interacting with different types of text based formats and how one should prepare documents so they can fulfill their functions. This is the follow-up to the Information Management post." />
+<meta property="og:description" content="As the title suggests, the following is about interacting with different types of text based formats and how one should prepare documents so they can fulfill their functions. This is the follow-up to the Information Management post." />
+<link rel="canonical" href="http://localhost:4000/post/2022/documentdesign.html" />
+<meta property="og:url" content="http://localhost:4000/post/2022/documentdesign.html" />
+<meta property="og:site_name" content="davwi" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-25T00:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Document Design" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"David Wittig"},"dateModified":"2022-09-25T00:00:00+02:00","datePublished":"2022-09-25T00:00:00+02:00","description":"As the title suggests, the following is about interacting with different types of text based formats and how one should prepare documents so they can fulfill their functions. This is the follow-up to the Information Management post.","headline":"Document Design","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/post/2022/documentdesign.html"},"url":"http://localhost:4000/post/2022/documentdesign.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="davwi" />
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+<!-- math jax https://11011110.github.io/blog/2019/10/17/mathjax-3-jekyll.html 
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function(){
+        function stripcdata(x) {
+          if (x.startsWith('% <![CDATA[') && x.endsWith('%]]>'))
+            return x.substring(11,x.length-4);
+          return x;
+        }
+        document.querySelectorAll("script[type='math/tex']").forEach(function(el){
+          el.outerHTML = "\\(" + stripcdata(el.textContent) + "\\)";
+        });
+        document.querySelectorAll("script[type='math/tex; mode=display']").forEach(function(el){
+          el.outerHTML = "\\[" + stripcdata(el.textContent) + "\\]";
+        });
+        var script = document.createElement('script');
+        script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
+        document.head.appendChild(script);
+      }, false);
+      </script>
+
+
+-->
+<!-- https://benlansdell.github.io/computing/mathjax/ -->
+
+<script type="text/x-mathjax-config">
+    MathJax = {
+      tex: {
+        equationNumbers: {autoNumber: "AMS"}
+        inlineMath: [['$', '$'], ["\\(", "\\)"]],
+        displayMath: [ ['$$', '$$'] ],
+        processEscapes: true,
+        loader: {load: ['[tex]/color']},
+        tex: {packages: {'[+]': ['color']}}
+      }
+    };
+    MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
+          alert("Math Processing Error: "+message[1]);
+        });
+    MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
+          alert("Math Processing Error: "+message[1]);
+        });
+</script>
+    
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    
+<script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      displayMath: [ ['$$', '$$'], ["\\[", "\\]"]],
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+<!-- prevent equation overflow on mobile-->
+<!-- first for inline, second for display math-->
+<style>
+mjx-container:not([display]) {
+  display: inline-flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+mjx-container{
+  display: inline-flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+</style>
+
+
+</head><body><header class="site-header">
+
+    <div class="wrapper"><a class="site-title" rel="author" href="/">davwi</a><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+  
+          <div class="trigger"><a class="page-link" href="/posts/index.html">Posts</a><a class="page-link" href="/fillips/">Fillips</a><a class="page-link" href="/about/">About</a></div>
+        </nav></div>
+  </header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Document Design</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2022-09-25T00:00:00+02:00" itemprop="datePublished">
+          2022–09–25</time><!--wordcount here-->
+        <span style="float:right;">
+          <font style="font-size: 14px;color: #c0c0c0">~2000 words</font>
+        </span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>As the title suggests, the following is about interacting with different types of text based formats and how one should prepare documents so they can fulfill their functions. This is the follow-up to the Information Management post.</p>
+
+<p>Once a piece of nonfiction is written based on collected information, one should give due consideration to copyediting with style guidelines like “The Chicago Manual of Style” by the University of Chicago Press[1], “The Elements of Style” by William Strunk Jr.[2] and “The Economist Style Guide” by Ann Wroe[3] for consistent quality in writing.</p>
+
+<h4 id="choice-of-format">Choice of Format</h4>
+
+<p>A document refers to an object, which stores information that serve as a record. Accessability of information is thereby the primary function of documentation.
+Different means of access require different modes of presentation.
+Starting from the most adaptable format, plain text, based on the intended function of the document, one can choose a fitting format for proceeding with refining the type and layout.
+A good combination of markup languages is LaTeX for PDFs and html+css for WWW or EPUB, both complementarily compensating each others shortcomings, henceforward I would like to focus my deliberations on those.</p>
+
+<p>The plain text document base still requires a minimum of markup, with markdown and org-mode<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> being the most prominent lightweight markup languages.
+At this stage, the document is not for public sharing, but certain standards like proper citations should be considered to serve as a useful source later on.
+A good fit is the pandoc document converter software, with extensible conversion operations to LaTeX and html+css from its pandoc flavored markdown specification.
+Markdown documents can be initialized with a YAML metadata block to denote the author, date and title.
+By using the extended pandoc markdown syntax, sources can be cited from a biblatex file with <code class="language-plaintext highlighter-rouge">[@CiteKey]</code> and a <code class="language-plaintext highlighter-rouge">.csl</code> citation style file; further footnotes may be added by <code class="language-plaintext highlighter-rouge">[^Key]</code>, immensely reducing the amount of adjustments and typesetting required to produce reasonable results for both LaTeX and html based formats from a single text. The <code class="language-plaintext highlighter-rouge">raw_attribute</code> extension allows conversion format conditional text blocks. The pandoc output can be improved with custom regular expression substitutions pre and post conversion, for example in python with a the <code class="language-plaintext highlighter-rouge">subprocess</code> and <code class="language-plaintext highlighter-rouge">re</code> standard libraries.
+Though compromises have to be made by adhering to this smallest common denominator of a simple markdown syntax, it ensures a quicker workflow and is a good starting point for more refined typesetting later on.</p>
+
+<p>Most documents will benefit from including vector graphics and diagrams as pictorial, yet abstract, representations of information. Graph drawing tools include inkscape, graphviz, diagrams.net and PGF/TikZ.</p>
+
+<center>
+<figure>
+    <img class="invert" src="/assets/img/documentdesign-iigPandoc.svg" alt="information input graph" width="100%" />
+    <figcaption><i><b>Fig. 1:</b> Information Output Graph made with GraphViz</i></figcaption>
+</figure>
+</center>
+<p>In this Figure we see the following:</p>
+
+<ol>
+  <li>
+    <p>By not using the <code class="language-plaintext highlighter-rouge">--template</code> option for generating a PDF in pandoc, but inputting the generated <code class="language-plaintext highlighter-rouge">.tex</code> files as mainmatter, a regular LaTeX document template can be used and adjusted. A batch file is used to remove the aux files of each post’s standalone PDF document. In addition, a combined document with all posts is created.</p>
+  </li>
+  <li>
+    <p>Converted to <code class="language-plaintext highlighter-rouge">markdown_strict</code>, the generated document will work with the markdown based static site generator.</p>
+  </li>
+  <li>
+    <p>Multiple bibliography files can be merged and entry inclusion be filtered by post association to keep this main bibliography up to date. The title field needs to be protected by curly brackets, because pandoc’s <code class="language-plaintext highlighter-rouge">--citeproc</code> conversion from biblatex to Citation Style Language metadata disregards the title case. It also does not work properly with CJK field content.</p>
+  </li>
+  <li>
+    <p>Pandoc’s <code class="language-plaintext highlighter-rouge">--template</code> option is used to prepare the output file for inclusion in the LaTeX template in the next step with the metadata from the input file’s yaml header.</p>
+  </li>
+  <li>
+    <p>A python script is executed via shell functions that convert the inputs into standalone PDFs, EPUBs and a static website.</p>
+  </li>
+  <li>
+    <p>This is where one has to write the text, while adhering to a style guide.</p>
+  </li>
+  <li>
+    <p>The EPUB format uses <code class="language-plaintext highlighter-rouge">--mathml</code> for formulas, and lua filters to maintain the correct image path across all formats</p>
+  </li>
+</ol>
+
+<h4 id="pdf-template">PDF Template</h4>
+
+<p style="text-align:right;"><i>Template version 2023&ndash;02&ndash;26 source&mdash;
+<a href="/assets/img/documentdesign-20230226Template.zip" target="_blank">ZIP</a></i></p>
+
+<p>For PDF generation, LaTeX and its document classes enable the design of many types of documents from books, presentations and articles, to letters, flashcards or curriculum vitae.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
+
+<p>The mainly used template of mine can adapt to different design requirements, by alteration of the document structure based on assigned boolean inputs for conditional statements in the main document.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\documentclass[]{this_class}
+\newcommand\true{1}
+
+%------------------------------------------------
+%   Document layout (0=false 1=true)
+%------------------------------------------------
+\newcommand\conditionA{0}
+
+\usepackage{style} 
+
+%------------------------------------------------
+%   Document structure
+%------------------------------------------------
+\begin{document}
+
+\ifx\conditionA\true
+    \input{contentA}
+\else
+    \input{contentB}
+\fi
+
+\end{document}
+</code></pre></div></div>
+
+<p>A good document viewer for the output PDF is SumatraPDF, because it allows you to change the background and text color for reading in low light conditions.</p>
+
+<p>The LaTeX template has multiple cover options.
+Lightweight options are <code class="language-plaintext highlighter-rouge">maketitle</code> for short documents, the <code class="language-plaintext highlighter-rouge">titlepage</code> environment, or inputting an external background and writing on top of it with the <code class="language-plaintext highlighter-rouge">eso-pic</code> and <code class="language-plaintext highlighter-rouge">textpos</code> packages.</p>
+
+<p>A simple titlepage is the best option for most extensive documents, but if you want to make a bound print copy of your text, you are best served by a proper book cover including a spine.
+LaTeX might not be the best option for most styles of cover artwork and one would be better served with a vector graphics editor like inkscape, but covers reminiscent of the New Typography movement could certainly be created without too much of a hassle.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>
+It becomes clear why that is, if we consider the history of typography.</p>
+
+<p>The 15th century saw the invention of the printing press, imitating the medieval handwritten manuscript design and black letter typeface.
+Around the turn of the century in Italy, antiqua typefaces (roman and italic type) where developed with printing in mind, increasing the bodytext’s fluency.
+Italian Renaissance culture spread throughout Europe by impetus of the Italian wars from 1494 to 1559 and saw innovations by the French, like Garamond.
+The popularity of antiqua initiated the subsequent design of Fraktur in Germany, a mellowed but as the name suggests, still distinctly fractured black letter typeface.
+The cultural influence of the French Rococo, sealed the transition towards French antiqua as the dominant class of typefaces across most of Europe.
+Clear and simple forms and the contrast in stroke thickness of French antiqua types prompt a logical progression in step with the themes of Enlightenment in the 17th and 18th centuries.
+Modern roman typefaces from Didot employ mathematical precision and geometric shapes.
+The Industrial Revolution in the 19th century spawned new production processes.
+The need for flashy, “grotesque” display and advertisement fonts along with trends in modern art, makes sans serif a popular alternative to antiqua in a broadening array of use cases.
+1920s’ New Typography movement is a reactive response to late 19th century Art nouveau inspired printing, considered retrogressive due to its reintroduction of ornaments, by modernist typographers like Jan Tschichold, Herbert Bayer and László Moholy-Nagy.</p>
+
+<blockquote>
+  <p>“The essence of the New Typography is clarity. This puts it into deliberate opposition to the old typography whose aim was”beauty” and whose clarity did not attain the high level we require today. ” — The New Typography by Jan Tschichold 1928, p.66 <sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup></p>
+</blockquote>
+
+<p>I consider TeX to be a consistent progression of this mentality, but focusing less on merely exposing a printed pieces essential function, and more on providing the designer with a toolset to convey their message, allowing for a sliver of artistic expression.
+Even Tschichold himself repudiated his books intolerant and strict claim to absoluteness after reconsidering his cultural bias in light of World War II.</p>
+
+<p>When the document is about to be printed, the printing company will provide the required cover measurements based on their production process and the selected paper thickness. Consider that the inner margin of long documents may have to be increased due to folding. The spine should follow ISO-6357 according to which the text should run from top to bottom, when the book is upright.</p>
+
+<center>
+<figure>
+<img src="/assets/img/documentdesign-bookcover.svg" alt="documentdesign-bookcover.svg" width="100%" style="background-color: #fff" />
+<figcaption><i><b>Fig. 2:</b> XeLaTeX custom cover design demonstration converted to .svg for better browser support</i></figcaption>
+</figure>
+</center>
+<p>This design mainly utilizes the <code class="language-plaintext highlighter-rouge">bookcover</code>, <code class="language-plaintext highlighter-rouge">xcoffins</code> and <code class="language-plaintext highlighter-rouge">tikz</code> packages and imitates, in parts, the 1925 issue “sonderheft elementare typografie” of the magazine “typografische mitteilungen”, based on an exemplary implementation.<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup></p>
+
+<h4 id="webpage-template">Webpage Template</h4>
+
+<p>The html+css style for the World Wide Web should be somewhat congruent with the LaTeX template. The static site generator takes pandoc’s output markdown files, executes the conversion to html and applies the template accordingly.
+As html+css is not agnostic to the document viewer’s dimensions, insisting on ideal replication is both unfeasible and unnecessary. It’s adaptability requires new guidelines; for example, whereas in PDF’s there is no need to strip images of their metadata individually, images included in html documents should be examined with exiftool prior to publication. I find that justified text does not look pleasing on websites, the interword spacing is often distracting.
+As this website is build by the static site generator jekyll utilizing the minima theme, most of the publication design is determined by modifications to the predefined settings.[8] After quite a few iterations, I now gladly consider this publication design congruent with its intended function.
+Notably, the orthographic best practices are independent of format and are applicable to all documents.
+When in doubt, my reference of choice is the “Chicago Manual of Style” since even the best template requires copyediting.</p>
+
+<p>As German law demands legal information such as legal notices and data privacy policies to be constantly and easily accessible from every subpage, integrating them in the global website footer is most convenient. In the <code class="language-plaintext highlighter-rouge">_includes</code> folder, add <code class="language-plaintext highlighter-rouge">contact.html</code> in Liquid syntax to the theme’s <code class="language-plaintext highlighter-rouge">footer.html</code> and create those files. In <code class="language-plaintext highlighter-rouge">contact.html</code> just add <code class="language-plaintext highlighter-rouge">assets/pages/contact.md</code> in Liquid syntax, and create that path. With <code class="language-plaintext highlighter-rouge">permalink: /contact/</code> in the document yaml-head, the legal notice will be build and linked correctly.</p>
+
+<p>I added custom sub- and superscript css properties to eliminate line spacing irregularities caused by endnotes.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//custom: eliminate line spacing irregularities
+sup {
+  vertical-align: super; 
+  line-height: 1ex;
+}
+
+sub {
+  vertical-align: sub;
+  line-height: 1ex;
+}
+</code></pre></div></div>
+
+<p>I also added a <code class="language-plaintext highlighter-rouge">use_math: true/false</code> YAML field, only loading mathjax when needed. Mathjax’s CSS container <code class="language-plaintext highlighter-rouge">mjx-container</code> should be changed to <code class="language-plaintext highlighter-rouge">overflow-x: auto;</code> for display math and <code class="language-plaintext highlighter-rouge">overflow-x: hidden;</code> for inline math <code class="language-plaintext highlighter-rouge">mjx-container:not([display])</code>, else the layout breaks with long equations and unneeded scrollbars.</p>
+
+<h4 id="epub-template">EPUB Template</h4>
+
+<p>For comfortable offline reading on screens, a pandoc conversion to EPUB is a good option.
+EPUB is an open source, XML based format that supports both fixed and reflowable layout formatting and a subset of MathML; in effect, such a file is an archive that contains a website. For most types of electronic publications, EPUB should be superior to PDF since the content can be processed and extracted, for example with regular expressions.</p>
+
+<hr />
+<h4 id="endnotes">Endnotes</h4>
+
+<p><span class="csl-left-margin">[1] </span><span class="csl-right-inline">University of Chicago Press, <em><span class="nocase">The Chicago Manual of Style</span></em>, 17th ed. University of Chicago Press. </span></p>
+
+<p><span class="csl-left-margin">[2] </span><span class="csl-right-inline">W. Strunk, <em><span class="nocase">The Elements of Style</span></em>. 1918. </span></p>
+
+<p><span class="csl-left-margin">[3] </span><span class="csl-right-inline">A. Wroe, <em>The Economist Style Guide</em>. </span></p>
+
+<p><span class="csl-left-margin">[4] </span><span class="csl-right-inline">H. Voß, <em><span class="nocase">Einführung in LaTeX</span></em>. </span></p>
+
+<p><span class="csl-left-margin">[5] </span><span class="csl-right-inline">M. Öchsner and A. Öchsner, <em>Advanced LaTeX In Academia</em>. 2022. </span></p>
+
+<p><span class="csl-left-margin">[6] </span><span class="csl-right-inline">J. Tschichold, <em>The New Typography</em>. University of California Press, 2006. </span></p>
+
+<p><span class="csl-left-margin">[7] </span><span class="csl-right-inline">M. J. Krysinski, <em><span class="nocase">The Art of Type and Typography</span>: <span class="nocase">Explorations in Use and Practice</span></em>. </span></p>
+
+<p><span class="csl-left-margin">[8] </span><span class="csl-right-inline">T. Preston-Werner, “<span class="nocase">Blogging Like a Hacker</span>,” Nov. 17, 2008. [Online]. Available: <a href="https://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html">https://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html</a></span></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Emacs org-mode has the benefit, that it includes an export functionality for both html and LaTeX, but for me it would mean a reimplementation of a process I have already optimized, and a new dependancy. The conversion will not result in a document as tailored to my preferences as writing native TeX or html myself; furthermore markdown is in braod use in other applications, i.e. this page’s static site generator <code class="language-plaintext highlighter-rouge">jekyll</code>. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>The best resource for TeX related information is <a href="https://tex.stackexchange.com/">tex.stackexchange.com</a>. For a more structured approach, I can recommend “Einführung in LaTeX” (german) by Herbert Voß[4] and “Advanced LaTeX In Academia Applications In Research And Education” by Marco Öchsner and Andreas Öchsner[5]. The latter offers up-to-date ideas and implementations, especially relevant for teachers and students in higher education. Because the included code snippets are displayed with line numbers, they are not easily copyable, the inclusion of the document source with <code class="language-plaintext highlighter-rouge">attachfile</code>, or linking to it with a QR code would have been helpful. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>As LaTeX is a non-visual editor, describing complex shapes is cumbersome; all measurements are based on the unit sp with $1pt = \frac{1}{65536}sp \approx 2.845mm$. Larger units too can only be seperated into 65536 parts. Regardless of unit choosen, the 5th decimal place is thus always the most precise. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>“The New Typography” by Jan Tschichold[6] reads contemporary despite being written around 100 years ago (1928). What would not surprise me with classic fiction, feels surprising for non fiction. The choice of vocabulary can be unexpected at times as the German author uses seemingly anglicised German words that must have either been more canonical English words back then, or the suitable terms were unascertainable, which is equally peculiar from a modern standpoint.
+“The Art of Type and Typography” by Mary Jo Krysinski[7] is a modern introduction to typography. Intended as supplementary textbook for the “Beginning Typography” class at The School of the Art Institute of Chicago, there are both assignments and a heavy focus on the usage of Adobe® InDesign® software. Among my learnings is the use of small-caps, as to not interfere with the overall font weight distribution when using abbreviations.
+My favorite fonts include “Consolas”, a monospaced sans serif font I use in text editors; “Futura”, developed based on geometric shapes in 1928 by German artist and designer Paul Renner and “Computer Modern Bright”, part of the Computer Modern family of typefaces designed by Donald Knuth. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p>It is based on user michal.h21’s answer at <a href="https://tex.stackexchange.com/a/17580">https://tex.stackexchange.com/a/17580</a>. <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div><a class="u-url" href="/post/2022/documentdesign.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+    <data class="u-url" href="/"></data>
+  
+    <div class="wrapper">
+  
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <p class="feed-subscribe">
+            <a href="/feed.xml">
+              <svg class="svg-icon brand-color" style="box-sizing: content-box;"> <!-- image only looks right with content box-->
+                <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+              </svg>
+              <span>Atom feed</span>
+            </a>
+           <!-- <span>| </span><span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a></span>-->
+          </p>
+          <ul class="contact-list">
+            <!--<li><a class="u-email" href="mailto:spamprotection@wrong.email">spamprotection@wrong.email</a></li>-->
+          </ul>
+        </div>
+        <div class="footer-col footer-col-2">
+          <p><a href="/contact/
+
+">legal notice, privacy policy</a><br>© 2019-2024 David Wittig</p><!--<font style="font-variant: small-caps">(En/De)</font> Impressum, Datenschutz-->
+        </div>
+      </div>
+    </div>
+
+
+  </footer></body>
+
+</html>

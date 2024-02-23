@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- disallow indexing -->
+	<meta name="robots" content="noindex" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Fillips | davwi</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Fillips" />
+<meta name="author" content="David Wittig" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/fillips/" />
+<meta property="og:url" content="http://localhost:4000/fillips/" />
+<meta property="og:site_name" content="davwi" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Fillips" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"David Wittig"},"headline":"Fillips","url":"http://localhost:4000/fillips/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="davwi" />
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+<!-- math jax https://11011110.github.io/blog/2019/10/17/mathjax-3-jekyll.html 
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function(){
+        function stripcdata(x) {
+          if (x.startsWith('% <![CDATA[') && x.endsWith('%]]>'))
+            return x.substring(11,x.length-4);
+          return x;
+        }
+        document.querySelectorAll("script[type='math/tex']").forEach(function(el){
+          el.outerHTML = "\\(" + stripcdata(el.textContent) + "\\)";
+        });
+        document.querySelectorAll("script[type='math/tex; mode=display']").forEach(function(el){
+          el.outerHTML = "\\[" + stripcdata(el.textContent) + "\\]";
+        });
+        var script = document.createElement('script');
+        script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
+        document.head.appendChild(script);
+      }, false);
+      </script>
+
+
+-->
+<!-- https://benlansdell.github.io/computing/mathjax/ -->
+
+<script type="text/x-mathjax-config">
+    MathJax = {
+      tex: {
+        equationNumbers: {autoNumber: "AMS"}
+        inlineMath: [['$', '$'], ["\\(", "\\)"]],
+        displayMath: [ ['$$', '$$'] ],
+        processEscapes: true,
+        loader: {load: ['[tex]/color']},
+        tex: {packages: {'[+]': ['color']}}
+      }
+    };
+    MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
+          alert("Math Processing Error: "+message[1]);
+        });
+    MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
+          alert("Math Processing Error: "+message[1]);
+        });
+</script>
+    
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    
+<script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      displayMath: [ ['$$', '$$'], ["\\[", "\\]"]],
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+<!-- prevent equation overflow on mobile-->
+<!-- first for inline, second for display math-->
+<style>
+mjx-container:not([display]) {
+  display: inline-flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+mjx-container{
+  display: inline-flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+</style>
+
+
+</head><body><header class="site-header">
+
+    <div class="wrapper"><a class="site-title" rel="author" href="/">davwi</a><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+  
+          <div class="trigger"><a class="page-link" href="/posts/index.html">Posts</a><a class="page-link" href="/fillips/">Fillips</a><a class="page-link" href="/about/">About</a></div>
+        </nav></div>
+  </header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Fillips</h1>
+  </header>
+
+  <div class="post-content">
+    <style>
+@media screen and (min-width: 700px) {
+
+      ul.twocol {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+      }
+}
+</style>
+
+<p>The following selection of works of art cannot, of course, claim to be the result of disinterested aesthetic judgments in the Kantian sense, but consists of recommendations that I hope are aesthetically valuable nevertheless. Naturally, when discovering a work of art that induces an emotional response, one is tempted to pass it on as a recommendation. And I mostly write this section, so that I have my mind sorted about what I would like to share. However, admitting to a liking that one could reasonably classify as guilty pleasure can feel improper. James O. Incandenza’s “The Entertainment” lays bare the thought, that such impulses may be caused by the unwillingness to promote overindulgent self-gratification and that one has to be careful about how entertaining consumable goods are in general. This sentiment should of course not degenerate into pretentiousness, but putting some effort into developing the qualities of a Humean critic to make more complete judgments of taste could prove beneficial over time as countermeasure to the trends of the attention economy, as well as culture industry.</p>
+
+<p>There are many classification schemes and forms of artistic expression, all subject to beholder-determined response characteristics. Suggestions for the groupings listed below, to whom it may concern, might give a fillip to one’s faculty of aesthetic perception [ästhetisches Empfindungsvermögen]. (yes, I tried a little too hard to use <em>fillip</em> in a sentence)</p>
+
+<h4 id="paintings">Paintings</h4>
+
+<p>I have yet to see the vast majority of the following artworks in person. These are not meant to be the objectively greatest paintings,<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> just a few of the ones I like, or expect to like based on the readily available images.</p>
+
+<ul>
+  <li>王希孟 [WANG Ximeng] - 千里江山圖 (A Thousand Li of Rivers and Mountains) - 1113 - 51.5cm, 1191.5cm
+    <ul>
+      <li>A well known example of “blue-green shan shui” on an almost 12 meter long scroll.</li>
+    </ul>
+  </li>
+  <li>Petrus Christus - Portrait of a Young Girl - 1465 - 29cm, 22.5cm
+    <ul>
+      <li>The slightly misaligned eyes capture the onlooker’s attention, do they not? The provenance is also really interesting.</li>
+    </ul>
+  </li>
+  <li>藍瑛 [LAN Ying] - 紅友 (Red Friend) - 1649 - 148.9cm, 47.3cm
+    <ul>
+      <li>Scholar’s rocks are decorative objects and trying to find them in nature by yourself is a worthwhile outdoor activity, given you are traveling where they can be found. A good introduction to this topic is “The Japanese Art of Stone Appreciation” by Vincent Covello [3]. The subsection “Wabi, Sabi, Shibui, and Yugen” in Chapter 2 “Characteristics and Aesthetic Qualities” is the core message of the book, I feel like.</li>
+    </ul>
+  </li>
+  <li>Joseph Wright - An Experiment on a Bird in an Air Pump - 1768 - 183cm, 244cm</li>
+  <li>Louis Daguerre - The Ruins of Holyrood Chapel - 1824 - 211cm, 256.3cm
+    <ul>
+      <li>He is not just a great painter, he also invented the Daguerreotype photographic process and with that a whole new form of art, photography.</li>
+    </ul>
+  </li>
+  <li>Hiroshige - The Sea Off Satta in Suruga Province (駿河薩タ之海上 Suruga satta no kaijō) - 1858
+    <ul>
+      <li>“Thirty-six Views of Mount Fuji (Hiroshige)” and “One Hundred Famous Views of Edo” are great examples of late-era ukiyo-e prints because of the subject matter and the extensive use of bokashi (color gradation). I prefer Hiroshige’s muted colors, comparatively realistic landscapes and sense of depth over Hokusai’s bolder palette.</li>
+    </ul>
+  </li>
+  <li>Albert Bierstadt - The Rocky Mountains, Lander’s Peak - 1863 - 110.8cm, 90.2cm
+    <ul>
+      <li>Düsseldorf school of painting influenced member of the Hudson River School, shaping the genre of luminist, western American landscape paintings; working in 1860s’ New York City with help of field sketches and photographs collected during his travels to the American Old West.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></li>
+    </ul>
+  </li>
+  <li>Edward Hopper - Captain Upton’s House - 1927 - 71.8cm, 92.1cm</li>
+  <li>Manfred Mohr - P-21 (band structure) - 1970 - 52.9cm, 53.3cm</li>
+  <li>Ben Schonzeit - Cauliflower - 1975 - 213.36cm, 213.36cm
+    <ul>
+      <li>I discovered this artist through Louis K. Meisel Gallery. Louis K. Meisel coined the term Photorealism for the eponymic genre in 1969, although I prefer the term New Figurative Painting, describing the artist’s intend beyond prima facie. For me, this is the pinnacle of the first generation of photorealist paintings.</li>
+    </ul>
+  </li>
+  <li>Anthony Brunelli - Hanoi Market - 2003 - 68.58cm, 165.1cm
+    <ul>
+      <li>He is also the owner of Anthony Brunelli Fine Arts Gallery, another great resource for discovering contemporary artists.</li>
+    </ul>
+  </li>
+  <li>Lee Price - Self Portrait in Tub with Chinese Food - 2009 - 111.76cm, 111.76cm</li>
+  <li>Tom Bubul - Philadelphia is burning &amp; watermelon is all that can cool it, so there they are - 2017 - 76.2cm, 101.6cm</li>
+  <li>岡靖知 [OKA Yasutomo] - 「深藍」 - 2018 - 53cm, 41cm (P10)<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>
+    <ul>
+      <li>The painter seems to have become very popular over the last few years, at least his works sell for quite a lot. For similar contemporary works I would like to recommend looking at artworks by artists exhibited at the Sasai Fine Arts Gallery.</li>
+    </ul>
+  </li>
+  <li>三重野慶 [MIENO Kei] - 明日のこと - 2020 - 41cm, 31.8cm (F6)
+    <ul>
+      <li>I have a book of his, and as expected the prints are of even better quality than the digital images I could find.</li>
+    </ul>
+  </li>
+  <li>本木 ひかり [MOTOKI Hikari] - 「とどめるだけ」 - 2021 - 41cm, 31.8cm (F6)
+    <ul>
+      <li>I discovered the painter through Sasai Fine Arts Gallery, she has a very unique style and atmosphere within the photorealist genre of painting.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="fiction-books">Fiction Books</h4>
+
+<p>Only about 8% of new books printed in English, in 2015 were fiction books.<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup> Compared to ~700 movies released in American cinemas that year,<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup> those 8% still accounting for over two hundred thousand titles, showing how difficult it is to find the books most worthy of time to be spend on. Reading lists usually tend to be extensive which seems counterproductive, as the anyway scarce potential for exertion of influence is spread over more items; I will keep it concise.</p>
+
+<ul>
+  <li>Human Acts by Han Kang [7]
+    <ul>
+      <li>I like historical fiction, because I can look up facts about cities or political movements that are mentioned in these books<sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote" rel="footnote">6</a></sup> making the plot quite immersive.</li>
+    </ul>
+  </li>
+  <li>Stoner by John Williams [9]
+    <ul>
+      <li>I prefer Butcher’s Crossing’s setting and atmosphere, but it is eclipsed by Stoner as I read it in a more impressionable point in time [10]</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="poems">Poems</h4>
+
+<p>Many poems can be casually read in an unpremeditated way and still succinctly jolt your mind into thinking about a subject, or induce mental imagery, in an unexpected way.</p>
+
+<ul>
+  <li>Those Winter Sundays - Robert Hayden - 1966</li>
+  <li>Handinneres - Rainer Maria Rilke - 1924 [11]</li>
+  <li>树 (Trees) - Ai Qing [艾青] - 1940 [12]</li>
+  <li>문둥이 (The Leper) - 서정주 [Seo Jeong-ju] - 1936 [13]</li>
+  <li>Edward Hopper and the House by the Railroad (1925) - Edward Hirsch [14]</li>
+</ul>
+
+<h4 id="films">Films</h4>
+
+<p>I used to be more involved in finding great movies, my abating adventurous spirit in this domain could cause this list to remain unchanged for a while.</p>
+
+<ul>
+  <li>Vertigo by Alfred Hitchcock (1958)<sup id="fnref:7" role="doc-noteref"><a href="#fn:7" class="footnote" rel="footnote">7</a></sup></li>
+  <li>Сталкер (Stalker) by Andrei Tarkovsky (1979)</li>
+  <li>晩春 (Late Spring) by Yasujirō Ozu (1949)<sup id="fnref:8" role="doc-noteref"><a href="#fn:8" class="footnote" rel="footnote">8</a></sup></li>
+  <li>重慶森林 (Chungking Express) by Wong Kar-wai (1994)<sup id="fnref:9" role="doc-noteref"><a href="#fn:9" class="footnote" rel="footnote">9</a></sup></li>
+  <li>铁西区 (Tie Xi Qu: West of the Tracks) by 王兵 [Wang Bing] (2002)<sup id="fnref:10" role="doc-noteref"><a href="#fn:10" class="footnote" rel="footnote">10</a></sup></li>
+</ul>
+
+<h4 id="music-albums">Music Albums</h4>
+
+<p>I struggle to keep my shortlisting concise, so I am just going to focus on one mostly neglected and undervalued branch—Burmese, Indonesian and Malaysian (Pop) music from the 80s to 90s. Pop’s characterstic ambition to appeal to a general audience encourages reflection of existing trends rather than challenging the status quo, making it a formidable timecapsule of a culture’s current state.
+I would not know enough to reliably classify these works, but most of them are, in addition to (Indo-)Pop, listed as Funk, Jazz-Funk or Rock in the discogs database.</p>
+
+<ul>
+  <li>Paramitha Rusady - 1991 - Tanpa Dirimu</li>
+  <li>Nike Ardilla - 1991 - Matahariku</li>
+  <li>Vina Panduwinata - 1980 - Citra Biru</li>
+  <li>Trie Utami - 1991 - Untuk Ayah Ibu Tercinta</li>
+  <li>Sheila Majid - 1985 - Dimensi Baru</li>
+  <li>မေဆွိ [May Sweet] - 1986 - ႏွလံုးသားထဲကစိုင္းထီးဆိုင္ -၂</li>
+  <li>ဆုန်သင်းပါရ် [Sung tin Par] - 2004 - မင်းကို (Min Ko)</li>
+</ul>
+
+<p>I digitized some rarer vinyls, as you can find plenty of interesting albums that are hitherto unavailable in other formats; not the albums listed ex supra however, as they were mostly issued as cassette tapes and are exceedingly unattainable.</p>
+
+<script>
+// source: https://stackoverflow.com/questions/15960931/javascript-random-quote-onclick
+function albums(){
+
+var album_array = new Array;
+album_array[0]="Yassue (ヤッシュー) - 1993 - A Fine Day (J-Wave Singin' Clock Presents)";
+album_array[1]="Shinobu Ito - 1991 - Sailing Rolling";
+album_array[2]="Fred Simon & Liz Cifani - 1985 - Time and the River";
+album_array[3]="Simon Stockhausen - 1993 - Floating Free";
+album_array[4]="吉村弘 [Hiroshi Yoshimura] - 1982 - Wave Notation 1: Music for Nine Post Cards";
+album_array[5]="Bohren & der Club of Gore - 2000 - Sunset Mission";
+album_array[6]="坂田明 [Akira Sakata] - Silent Plankton";
+album_array[7]="John Zorn - 1995 - John Zorn's Cobra: Tokyo Operations '94";
+album_array[8]="Ground-Zero - 1996 - 革命京劇 Revolutionary Pekinese Opera Ver.1.28 (Kakumeikyōgeki)";
+album_array[9]="Various Artists - Relay: Archive 2007-2008";
+album_array[10]="Miles Davis - 1974 - Get Up With It";
+album_array[11]="Berliner Philharmoniker / Herbert von Karajan - 1984 - Finlandia; Valse triste; Tapiola; Der Schwan von Tuonela";
+album_array[12]="Manchester Camerata / Sachio Fujioka / Kyoko Tabe - 1998 - Piano Concerto “Memo Flora”";
+album_array[13]="Hildegard von Bingen - 1997 - Voices of Angels (Voices of Ascension/Dennis Keene)";
+album_array[14]="Third Ear Band - 1970 - Third Ear Band";
+album_array[15]="Caravan - 1971 - In the Land of Grey and Pink";
+album_array[16]="Can - 1973 - Future Days";
+album_array[17]="莫文蔚 [Karen Mok] - 1998 - I Say (我要說)";
+album_array[18]="소향 - 2000 - 소향";
+album_array[19]="장필순 [Jang Pil-Soon] - 1991 - 외로운 사랑";
+album_array[20]="斉藤由貴 [Yuki Saito] - 1991 - Love";
+album_array[21]="王菲 [Faye Wong] - 1994 - 天空 (Tiānkōng)";
+album_array[22]="Yumi Arai - 1973 - Hikō-ki Gumo (ひこうき雲)";
+album_array[23]="Teresa De Sio - 1987 - Sindarella Suite";
+album_array[24]="Doris Monteiro - 1976 - Agora";
+album_array[25]="Loredana Bertè - 1981 - Made in Italy";
+album_array[26]="Fania - 1989 - Deja Hablar Al Tiempo";
+album_array[27]="Diana Pequeno - 1989 - Mistérios";
+album_array[28]="宇多田光 [Utada Hikaru] - 1999 - First Love";
+album_array[29]="Giacomo Puccini - 2014 - Puccini Madama Butterfly (1955)";
+album_array[30]="矢野真紀 [Yano Maki] - 1999 - 幸せな夜 儚い時間 ";
+album_array[31]="박지윤 [Park Ji-Yoon] - 1998 - Blue Angel";
+album_array[32]="yeule - 2023 - softscars";
+album_array[33]="Yang Xiao-lin (楊小琳) - 1999 - 禧樂 (I Take You There)";
+album_array[34]="王菲 [Faye Wong] - 1996 - 浮躁 (Fúzào)";
+
+var album_info_array = new Array;
+album_info_array[0]="New Age, Ambient | Japan";
+album_info_array[1]="Easy Listening | Japan";
+album_info_array[2]="Ambient, ECM Style Jazz, Post-Minimalism | USA";
+album_info_array[3]="New Age, Progressive Electronic | Germany";
+album_info_array[4]="Ambient, New Age | Japan";
+album_info_array[5]="Dark Jazz | Germany";
+album_info_array[6]="Smooth Jazz, Free Jazz | Japan";
+album_info_array[7]="Indeterminacy, Conducted Improvisation | USA";
+album_info_array[8]="Sound Collage, Turntable Music, Musique concrète, Plunderphonics | Japan";
+album_info_array[9]="EAI, Lowercase, Reductionism | South Korea";
+album_info_array[10]="Jazz Fusion, Jazz-Funk, Avant-Garde Jazz | USA";
+album_info_array[11]="Tone poem | Germany, Finland";
+album_info_array[12]="Concerto, Neoclassicism | UK, Japan";
+album_info_array[13]="Medieval Classical Music, Plainsong, Choral | Germany";
+album_info_array[14]="Free Folk, Progressive Folk | UK";
+album_info_array[15]="Canterbury Scene | UK";
+album_info_array[16]="Krautrock | Germany";
+album_info_array[17]="Mandopop | Taiwan";
+album_info_array[18]="Gospel | South Korea";
+album_info_array[19]="K-Pop | South Korea";
+album_info_array[20]="J-Pop, Dream Pop | Japan";
+album_info_array[21]="Acoustic, Dream Pop, Downtempo, Ballad, Mandopop | China";
+album_info_array[22]="Folk Rock, Soft Rock | Japan";
+album_info_array[23]="Folk Rock, Canzone Napoletana, Ambient | Italy";
+album_info_array[24]="Latin, Funk, MPB | Brazil";
+album_info_array[25]="Pop Rock | Italy";
+album_info_array[26]="New Age, Leftfield, Ambient | Spain";
+album_info_array[27]="Latin, Pop, MPB | Brazil";
+album_info_array[28]="Contemporary R&B(Rhythm & Blues), J-Pop | Japan";
+album_info_array[29]="Opera, Romantic | Italy";
+album_info_array[30]="Rock | Japan";
+album_info_array[31]="K-pop | South Korea";
+album_info_array[32]="Dream Pop | Singapore, USA, UK";
+album_info_array[33]="New Age | Hong Kong";
+album_info_array[34]="Dream Pop, Mandopop | China";
+
+random_album = Math.floor(Math.random()*album_array.length);
+
+document.getElementById("album_textarea").value =album_array[random_album];
+document.getElementById("album_info_textarea").value =album_info_array[random_album];
+
+// source: https://stackoverflow.com/questions/454202/creating-a-textarea-with-auto-resize
+const tx = document.getElementsByTagName("textarea");
+for (let i = 0; i < tx.length; i++) {
+  tx[i].setAttribute("style", "height:" + 0 + "px;overflow-y:hidden;"); // custom
+  tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+  tx[i].addEventListener("input", OnInput, false);
+}
+
+function OnInput() {
+  this.style.height = "auto";
+  this.style.height = (this.scrollHeight) + "px";
+}
+}
+window.onload=albums;
+</script>
+
+<p>To mention more great albums without causing overstimulation, I deployed some <code class="language-plaintext highlighter-rouge">javascript</code>. <button onclick="albums()">show other album</button><br /></p>
+<textarea id="album_textarea" wrap="hard" readonly=""></textarea>
+<textarea id="album_info_textarea" wrap="hard" readonly=""></textarea>
+<hr />
+<h4 id="endnotes">Endnotes</h4>
+
+<p><span class="csl-left-margin">[1] </span><span class="csl-right-inline">K. Hosack, <em><span class="nocase">Great Paintings: The World’s Masterpieces Explored and Explained</span></em>. 2011. </span></p>
+
+<p><span class="csl-left-margin">[2] </span><span class="csl-right-inline">S. Farthing, <em>1001 Paintings You Must See Before You Die</em>. 2006. </span></p>
+
+<p><span class="csl-left-margin">[3] </span><span class="csl-right-inline">V. Covello, <em><span class="nocase">The Japanese Art of Stone Appreciation</span>: <span class="nocase">Suiseki and its Use with Bonsai</span></em>. 1984. </span></p>
+
+<p><span class="csl-left-margin">[4] </span><span class="csl-right-inline">National Gallery of Art, “Albert Bierstadt.” [Online]. Available: <a href="https://www.nga.gov/collection/artist-info.6707.html">https://www.nga.gov/collection/artist-info.6707.html</a></span></p>
+
+<p><span class="csl-left-margin">[5] </span><span class="csl-right-inline">E. Fredner, “<span class="nocase">How many novels have been published in English? (An Attempt)</span>,” 2017. [Online]. Available: <a href="https://litlab.stanford.edu/how-many-novels-have-been-published-in-english-an-attempt/">https://litlab.stanford.edu/how-many-novels-have-been-published-in-english-an-attempt/</a></span></p>
+
+<p><span class="csl-left-margin">[6] </span><span class="csl-right-inline">S. Follows, “<span class="nocase">How many films are released each year?</span>” 2017. [Online]. Available: <a href="https://stephenfollows.com/how-many-films-are-released-each-year/">https://stephenfollows.com/how-many-films-are-released-each-year/</a></span></p>
+
+<p><span class="csl-left-margin">[7] </span><span class="csl-right-inline">H. Kang, <em>Human Acts</em>. 2017. </span></p>
+
+<p><span class="csl-left-margin">[8] </span><span class="csl-right-inline">K. M. Hwang, <em><span class="nocase">A History of Korea</span></em>. 2010. </span></p>
+
+<p><span class="csl-left-margin">[9] </span><span class="csl-right-inline">J. Williams and J. McGahern, “Stoner.” 1965. </span></p>
+
+<p><span class="csl-left-margin">[10] </span><span class="csl-right-inline">J. Williams, <em><span class="nocase">Butcher’s Crossing</span></em>. 1960. </span></p>
+
+<p><span class="csl-left-margin">[11] </span><span class="csl-right-inline">R. M. Rilke, <em>Hundert Gedichte</em>. 2016. </span></p>
+
+<p><span class="csl-left-margin">[12] </span><span class="csl-right-inline">A. Qing, <em>Selected Poems</em>. 2021. </span></p>
+
+<p><span class="csl-left-margin">[13] </span><span class="csl-right-inline">C.-P. Song, “<span class="nocase">The Leper by Seo Jung-ju</span>: <span class="nocase">Translated by Chae-Pyong Song and Anne Rashid</span>,” 2013. [Online]. Available: <a href="https://jaypsong.blog/2013/01/16/the-leper-by-seo-jung-ju/">https://jaypsong.blog/2013/01/16/the-leper-by-seo-jung-ju/</a>. [Accessed: Mar. 07, 2022]</span></p>
+
+<p><span class="csl-left-margin">[14] </span><span class="csl-right-inline">E. Hirsch, “<span class="nocase">Edward Hopper and the House by the Railroad (1925)</span>,” 1925. [Online]. Available: <a href="http://english.emory.edu/classes/paintings&amp;poems/house.html">http://english.emory.edu/classes/paintings&amp;poems/house.html</a></span></p>
+
+<p><span class="csl-left-margin">[15] </span><span class="csl-right-inline">D. Richie, <em><span class="nocase">Ozu His Life and Films</span></em>. 1974. </span></p>
+
+<p><span class="csl-left-margin">[16] </span><span class="csl-right-inline">K. Cheung, “The Impossible City: A Hong Kong Memoir.” 2022. </span></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>In her book titled “Great Paintings” [1], Karen Hosack attempts to give an overview of the most noteworthy paintings. While I am not particularly fond of the majority of works presented, discovering the few I do like makes the book worth flipping through. The same goes for “1001 Paintings You Must See Before You Die” by Stephen Farthing [2]; while it offers no close-up images, the written description and the quantity of works presented more than make up for it. Both works attempt to be inclusive, but they should better be thought of as compilations of western paintings. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>“By late September 1859 Bierstadt had returned to New Bedford laden with field sketches, stereo photographs, and Indian artifacts.” [4] <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>The dimensions of contemporary Japanese paintings are often still stated in terms of standard canvas sizes, adapted from the 19th century French system. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>“According to Bowker’s Books in Print, there were 2,714,409 new books printed in English in 2015. Of these, just 221,597 (8.2%) were classified as fiction.” [5] <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p>“In 2016, there were 736 films released in US cinemas; twice the number in 2000.” [6] <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6" role="doc-endnote">
+      <p>A historical background for the plot in “Human Acts” can be found in Hwang Kyung-moon’s book ‘A History of Korea’, especially in the 26th chapter entitled ‘South Korean Democratisation’.[8] The 1970s are known in South Korea as the ‘Yusin’ decade. President Park Chung-hee imposed the Yusin (‘revitalisation’) constitution in 1972 in an attempt to solidify the path to Korean reunification, but in reality to make himself a de facto dictator for life by cracking down on all political dissent. In 1979, dictator Park was assassinated by the head of the Korean Central Intelligence Agency, who claimed to be motivated by a desire for democracy. For a short time it seemed that democratisation was well underway, until December of that year when General Chun Doo-hwan, who had been appointed to investigate the case, undermined the power of the elected president, Choi Kyu-ha, by arresting the supreme military commander in a coup d’état and concentrating more power in his hands. The public, particularly students, demanding an end to martial law and the release of political prisoners, took to the streets and threatened Chun Doo Hwan’s rule in what became known as the Seoul Spring of 1980. On 17 May, opposition leader Kim Dae Jung was arrested and all universities were closed.</p>
+
+      <p>The Gwangju Uprising, also known as 518 (오일팔), referring to the day it began, escalated as government troops took extreme measures against students demonstrating in front of their university, spreading the protests to the city’s citizens. With around 2,000 victims and 10 days of terror, 518 was an indispensable element in the path towards democratisation in 1987, deligitimising Chun Doo-hwan’s dictatorship. Opposition to his rule grew until 1987, when Chun proposed a parliamentary rather than a popular election to install his successor, Roh Tae-woo. The people were outraged at this apparent continuation of dictatorship and staged the largest protests in Korean history, protected by foreign pressure on the government to keep the protests non-violent in the light of the 1988 Seoul Olympics and not to deligitimise another presidency. Roh Tae-woo issued a statement calling for direct presidential elections and further democratising reforms, ending the Fifth Republic. The Sixth Republic, which still exists today, surprisingly got its first president under the leadership of the last dictator. The opposition leaders Kim Young Sam and Kim Dae Jung, unable to coordinate an alternative to Roh Tae-woo, lost with 60% of the vote. In the 1990s, both became president and continued to work on the further legitimisation of the Sixth Republic and its democratic political culture.</p>
+
+      <p>Kim Young-sam’s government revisited Gwangju to launch a prosecutorial investigation into the circumstances leading up to the massacre and found Chun and Roh guilty of their illegal power grab. The Kim Dae-jung government formally pardoned them in 1998 in the interests of national reconciliation. <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:7" role="doc-endnote">
+      <p>There is some commentary on Vertigo in the post about drawing. <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:8" role="doc-endnote">
+      <p>[15]</p>
+
+      <p>I have only skim-read this book and I would only recommend reading the whole thing to cinephile Ozu fans, so likely most of them. <a href="#fnref:8" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:9" role="doc-endnote">
+      <p>Karen Cheung, in her book “The Impossible City: A Hong Kong Memoir” from 2022 [16], mentions that Wong’s Hong Kong aesthetics should not be conflated with authentic Hong Kong culture, as it too often is; and that it is a common mis-expectation among visitors. I would say that the city is the main character in Chungking Express, scintillating by acting to create a longing atmosphere for a setting that has never existed in the first place, and isn’t that what the movie is trying to convey?
+Let me add that I have mixed feelings about the book, in part due to wrong expectations. Though it might rightfully be classified as a memoir of an interesting Hong Kong citizen, a well written one at that, it is far from even a semi-scientific area study, which I would have preferred. <a href="#fnref:9" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:10" role="doc-endnote">
+      <p>In order to finance the losses against the Empire of Japan in the first Sino-Japanese War from 1894-1895, Qing China asked Russia for loans, leading to the establishment of the Russian government controlled Russo-Chinese Bank as collateral. While China maintained territorial integrity on the surface, Russia was allowed to expand their railway network and gained jurisdiction over large parts of the northeastern regions known as Manchuria after signing the Li–Lobanov Treaty in 1896 to protect themselves from future aggressions by the Japanese. After the Empire of Japan won the Russo-Japanese War in 1905, a section named the South Manchurian Railway (Dalian–Fengtian/Shenyang (Mukden)–Changchun) was transferred to Japanese rule and maintained by the Mantetsu Company. A Japanese staged act of terrorism, named the Mukden Incident after the location where the attack of their own South Manchuria Railway took place near Mukden (now Shenyang), gives the Japanese Army a reason to invade and occupy Manchuria to establish the puppet state of Manchukuo in 1932. This deception is considered a precurser to the Second Sino-Japanese War, starting in 1937 with the Marco-Polo Bridge Incident.</p>
+
+      <p>The Tiexi-District (铁西区; ‘railway’s west district’) in Shenyang is found west of the South Manchurian Railway tracks, and was home to worker accommodations and heavy industry since the production of Japanese war goods in 1934. The tumultuous decades leading up to the documentary’s filming in the late 90s saw the Cultural Revolution, a movement from 1966-1976 in which Mao Zedong intended to purge Chinese Communism of impurities and lead towards the ideology of Maoism, and the failed “Great Leap Forward” a few years earlier, causing “The Great Chinese Famine” killing tens of millions. After the death of Mao in 1976 and a reformation of the Chinese political elite, the economic reform “Opening of China” as a socialist market economy caused the contracting-out of state owned heavy industry enterprises in the 80s and 90s and northeastern Chinese provinces have been strongly affected by these closures. In 2002, just after the time of filming, Tiexi was renamed the Tiexi New District following the “Shenyang Economic and Technological Development Zone” establishment, and the “Northeast Area Revitalization Plan” shifted Shenyang further into the service sector and highly specialized industries such as electronics.</p>
+
+      <p>To appreciate this documentary, this autodidactic research about the history of the region is required. Because on its surface it presents as nothing but a seemingly declining environment reminiscent of “The Zone” in Andrei Tarkovsky’s Stalker, depressing and pessimistic in atmosphere, but this actually is a story about change of a rust belt in a rapidly advancing society, and the opportunities that it may offer regardless of its naturally slow, or forceful, government initiated progression. The camera reflects that sentiment, at times awfully slow and repetitive, then very hasty and confusing, because one gets thrown into new scenes without any explanation. The workers in “Part 1: Rust” lose their job, but get away from the outdated, hazardous smelting plant. The villagers in “Part 2: Remnants” lose their neighborhood, but it may be better to force people out of areas with no prospect, than to keep them unoccupied. Encountering a young villager, with all his life before him, listen to 王菲 [Faye Wong]’s 半途而廢 (Give Up Half Way) was an emotional highlight after hours of immersion into their troublesome mental state. “Part 3: Rails” feels like a completely standalone story, and for a change, even has a little happy ending. Watching a nine hour documentary about the difficult lives of others left me feeling somewhat pathetic, because Tie Xi Qu also showed how alike everyone is, only that some are luckier and more privileged than others. That is not a novel insight, but that type of renewed realization never translates well into writing. <a href="#fnref:10" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+    <data class="u-url" href="/"></data>
+  
+    <div class="wrapper">
+  
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <p class="feed-subscribe">
+            <a href="/feed.xml">
+              <svg class="svg-icon brand-color" style="box-sizing: content-box;"> <!-- image only looks right with content box-->
+                <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+              </svg>
+              <span>Atom feed</span>
+            </a>
+           <!-- <span>| </span><span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a></span>-->
+          </p>
+          <ul class="contact-list">
+            <!--<li><a class="u-email" href="mailto:spamprotection@wrong.email">spamprotection@wrong.email</a></li>-->
+          </ul>
+        </div>
+        <div class="footer-col footer-col-2">
+          <p><a href="/contact/
+
+">legal notice, privacy policy</a><br>© 2019-2024 David Wittig</p><!--<font style="font-variant: small-caps">(En/De)</font> Impressum, Datenschutz-->
+        </div>
+      </div>
+    </div>
+
+
+  </footer></body>
+
+</html>
